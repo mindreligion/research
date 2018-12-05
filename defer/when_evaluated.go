@@ -9,7 +9,7 @@ func a() ( i int){
 		fmt.Println(i)
 	}()
 	i += 4
-	fmt.Println(`before return`)
+	fmt.Printf(`before return, i=%v\n`, i)
 	return
 }
 func b(i int) int{
