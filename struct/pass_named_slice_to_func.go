@@ -16,6 +16,7 @@ func main() {
 }
 
 type t []string
+
 func change(s []string) {
 	s[1] = "balaboop"
 }

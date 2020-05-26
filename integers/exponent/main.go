@@ -7,4 +7,3 @@ func main() {
 	i := 10e10
 	fmt.Printf("%T", i)
 }
-

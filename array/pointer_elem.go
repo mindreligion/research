@@ -9,9 +9,9 @@ func main() {
 
 	fmt.Println(a, b)
 
-	show(a,b)
+	show(a, b)
 	*b[1] = 7
-	show(a,b)
+	show(a, b)
 }
 
 func show(a, b [3]*int) {

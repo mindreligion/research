@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type I interface {
-
 }
+
 // Don't understand why i - reference type. What conditions should be met to pass i by ref implicitly.
 func main() {
 	var i I

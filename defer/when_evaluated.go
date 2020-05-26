@@ -1,7 +1,8 @@
 package main
 
 import "fmt"
-func a() ( i int){
+
+func a() (i int) {
 	i = 0
 	defer func() {
 		i = b(i)
@@ -12,11 +13,11 @@ func a() ( i int){
 	fmt.Printf(`before return, i=%v\n`, i)
 	return
 }
-func b(i int) int{
+func b(i int) int {
 	fmt.Println(`in b `, i)
-	return i+1
+	return i + 1
 }
 func main() {
 
-	fmt.Println(`main result: `,a())
+	fmt.Println(`main result: `, a())
 }

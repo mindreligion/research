@@ -1,9 +1,9 @@
 package main
 
 import (
-	"testing"
 	"fmt"
 	"os"
+	"testing"
 )
 
 var shared string
@@ -34,7 +34,7 @@ func TestUsualSum(t *testing.T) {
 	}
 }
 
-func TestSubtesSum() {
+func TestSubTestSum(t *testing.T) {
 
 }
 
@@ -43,5 +43,4 @@ func BenchmarkSum(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		_ = sum(x, y)
 	}
-	fmt.Println("hello bench")
 }
