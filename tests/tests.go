@@ -7,6 +7,6 @@ func main() {
 	fmt.Printf("sum(%v, %v) = %v\n", a, b, sum(a, b))
 }
 
-func sum(a, b int) int{
+func sum(a, b int) int {
 	return a + b
 }
