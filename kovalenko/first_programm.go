@@ -8,5 +8,5 @@ func main() {
 	fmt.Scan(&color)
 	fmt.Println("your favorite color is", color)
 
-	//fmt.Println("my favorit color is", color)
+	//fmt.Println("my favorite color is", color)
 }

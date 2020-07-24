@@ -4,11 +4,11 @@ import "fmt"
 
 func a() (i int) {
 	i = 0
-	defer func() {
+	defer func(i int) {
 		i = b(i)
 		i += 2
 		fmt.Println(i)
-	}()
+	}(i)
 	i += 4
 	fmt.Printf(`before return, i=%v\n`, i)
 	return
