@@ -1,12 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"io/ioutil"
+	"strings"
+)
 
 func main() {
-	a, b := 4, 5
-	fmt.Printf("sum(%v, %v) = %v\n", a, b, sum(a, b))
-}
-
-func sum(a, b int) int {
-	return a + b
+	var res []string
+	for i := 2; i <= 16000; i++ {
+		res = append(res, fmt.Sprintf("%v,100000,300", i))
+	}
+	if err := ioutil.WriteFile("./lvl.csv", []byte(strings.Join(res, "\n")), 0777); err != nil {
+		panic(err)
+	}
 }
